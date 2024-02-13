@@ -1,0 +1,17 @@
+.achievement-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-content {
+  text-align: center;
+  color: #a8bec9;
+}
+
+.achievement-image {
+  width: 300px;
+}

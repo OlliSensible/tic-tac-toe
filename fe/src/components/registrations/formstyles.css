@@ -1,0 +1,36 @@
+.form-label {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 700;
+    color: #a8bec9;
+  }
+  
+.form-input {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    background-color: #a8bec9;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.btnSave{
+    background-color: #a8bec9;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    padding: 0px 15px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+.form-input.invalid {
+    border: 2px solid #bc4949;
+}
+
+.form-input.valid{
+    border: 2px solid rgba(1, 130, 23, 0.722);
+}

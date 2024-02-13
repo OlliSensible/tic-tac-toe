@@ -1,0 +1,92 @@
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.achievements-image {
+  width: 300px; 
+  margin: 10px; 
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+.achievements-image.non-active {
+  filter: grayscale(100%);
+}
+
+.achievements-image img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s; 
+}
+
+.achievements-image.completed {
+  filter: none;
+}
+
+.achievements-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+
+.achievements-image:hover .achievements-text {
+  opacity: 1; 
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #f2b237;
+}
+
+.progress-filled {
+  height: 100%;
+}
+
+.progress-info {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.progress-percentage {
+  font-weight: bold;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a8bec9;
+    padding: 10px;
+}
+
+.tabs-container .tab {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+    transition: all 0.3s ease;
+    color: #a8bec9;
+}
+
+.tabs-container .tab:hover,
+.tabs-container .tab.active {
+    color: #f2b237;
+}
